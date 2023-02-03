@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  carina:
+    environment:
+      - SUITE_NAME=${SUITE_NAME}
+    image: test
+    build: ./
+    volumes:
+      - /Users/solvd/Downloads/target:/target
+      - /Users/solvd/Downloads/reports:/reports
