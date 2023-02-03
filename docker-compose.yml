@@ -3,7 +3,6 @@ services:
   carina:
     environment:
       - SUITE_NAME=${SUITE_NAME}
-    image: test
     build: ./
     volumes:
       - /Users/solvd/Downloads/target:/target
