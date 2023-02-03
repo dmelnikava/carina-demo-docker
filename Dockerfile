@@ -1,4 +1,4 @@
-FROM adoptopenjdk:11
+FROM adoptopenjdk/openjdk11:jdk-11.0.8_10-ubuntu
 
 WORKDIR /carina-demo
 
@@ -8,4 +8,4 @@ RUN mvn dependency:resolve
 
 COPY src ./src
 
-CMD ["mvn", "test", "-Dsuite=api"]
+CMD [ "mvn", "test", "-Dsuite=api" ]
